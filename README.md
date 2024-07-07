@@ -1,1 +1,0 @@
-# nintendo-inspired-react-page
