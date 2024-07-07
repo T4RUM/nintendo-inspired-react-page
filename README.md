@@ -33,6 +33,8 @@ Você pode acessar a página do projeto no GitHub Pages para ver como ficou: [Ni
 
 Aqui está uma prévia da página desenvolvida, inspirada no site da Nintendo. Esta imagem mostra o layout e o design implementados no projeto, destacando os componentes criados com React.
 
+![Preview da Página](public/Preview.png)
+
 ## Contribuições
 
 Fique à vontade para dar opiniões, correções ou sugestões do que mais posso adicionar para treinar minhas habilidades no desenvolvimento com React. Se você tiver dicas ou melhorias, sinta-se encorajado(a) a compartilhar!
