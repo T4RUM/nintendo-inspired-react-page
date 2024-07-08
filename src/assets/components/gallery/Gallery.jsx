@@ -3,7 +3,6 @@ import Pix from "../../../../public/pix.png";
 import backgroundFooter from "../../../../public/footer-background.png";
 import Cards from "../cards/Cards";
 
-
 function Gallery() {
   return (
     <>
@@ -11,11 +10,10 @@ function Gallery() {
         <Cards />
       </section>
       <section className="content">
-        <section className="news-part-1">
-
-        </section>
         <h2 className="tittle-pix">Pague com Boleto ou PIX agora!</h2>
-        <img className="pix" src={Pix} alt="" />
+        <div className="container-img-pix">
+          <img className="pix" src={Pix} alt="" />
+        </div>
         <div className="container-pix-text">
           <span className="text-pix">
             Perfeito para quem gosta de jogar: Cartão presente digital do

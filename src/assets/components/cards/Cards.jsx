@@ -118,14 +118,14 @@ const novidades = [
 function Cards() {
   // Mapeamento para os jogos em destaque
   const itensCards = emDestaque.map((card) => (
-    <section className="container" key={card.cod}>
-      <div className="container-box">
+
+      <div className="container-box" key={card.cod}>
         <img className="img-card" src={card.imagem} alt="Banner Luigi" />
         <h3 className="titulo-game">{card.titulo}</h3>
         <div className="tag-disponivel">{card.tag}</div>
         <span className="tag-console">{card.console}</span>
       </div>
-    </section>
+
   ));
 
   // Mapeamento para os jogos favoritos
@@ -141,7 +141,7 @@ function Cards() {
   // Mapeamento para as novidades
   const itensCards3 = novidades.map((card) => (
     <div className="novidades" key={card.cod}>
-      <img className="card-novidade" src={card.imagem} alt="" />
+      <img className="img-novidade" src={card.imagem} alt="" />
       <small className="date">{card.data}</small>
       <h3 className="titulo-novidades">{card.titulo}</h3>
       <p className="descricao-novidades">{card.descricao}</p>
@@ -156,7 +156,7 @@ function Cards() {
       <h2 className="titulo-sessao">Jogos Favoritos</h2>
       <div className="container-cards">{itensCards2}</div>
       <h2 className="titulo-sessao">Novidades</h2>
-      <div className="container-teste">{itensCards3}</div>
+      <div className="container-cards-novidade">{itensCards3}</div>
     </>
   );
 }
