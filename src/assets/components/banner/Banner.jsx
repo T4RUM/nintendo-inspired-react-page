@@ -6,28 +6,36 @@ import { BsNintendoSwitch } from "react-icons/bs";
 import { MdGames } from "react-icons/md";
 import { BiSolidMessageAltDetail } from "react-icons/bi";
 
-
-
-
 function Banner() {
   return (
     <>
       <section className="menu">
         <ul>
-          <li> <MdGames />Jogos</li>
-          <li> <BsNintendoSwitch /> Nintendo Switch</li>
-          <li> <BiSolidMessageAltDetail />
-          Novidades e eventos</li>
+          <li>
+            {" "}
+            <MdGames />
+            Jogos
+          </li>
+          <li>
+            {" "}
+            <BsNintendoSwitch /> Nintendo Switch
+          </li>
+          <li>
+            {" "}
+            <BiSolidMessageAltDetail />
+            Novidades e eventos
+          </li>
         </ul>
       </section>
       <section className="container-banner">
-        <img className="banner-background" src={Background} alt="Background Luigi" />
-        <img className="banner" src={BannerLuigi} alt="Banner Luigi" />6
+        <img className="banner" src={BannerLuigi} alt="Banner Luigi" />
       </section>
       <section className="description">
         <div className="saiba-mais">
           <h2>Luigi's Mansion™ 2 HD</h2>
-          <button className="btn-saiba-mais2" type="submity">Saiba mais</button>
+          <button className="btn-saiba-mais2" type="submity">
+            Saiba mais
+          </button>
         </div>
         <div className="livre">
           <a
