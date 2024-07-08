@@ -1,0 +1,104 @@
+.menu ul {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #ffffff;
+  text-decoration: none;
+  list-style: none;
+  gap: 20px;
+  padding: 15px;
+}
+.menu ul li svg {
+  font-size: 18px; 
+}
+
+li {
+  display: flex;
+  color: #484848;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  gap: 10px;
+}
+
+li:hover {
+  color: #e60b11;
+}
+
+.container-banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 630px; 
+  
+}
+
+.banner-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.banner {
+  position: absolute;
+  top: 3rem;
+  z-index: 1;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  height: 650px;
+  width: 97%;
+  cursor: pointer;
+}
+
+.description {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 90px;
+  border-bottom: 1px solid #dadada;
+  padding: 45px;
+}
+
+.saiba-mais {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+section button {
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 10px;
+  background-color: rgb(230, 11, 17);
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+}
+section button:hover {
+  transform: scale(1.1); 
+}
+
+.livre a {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  color: rgb(72, 72, 72);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.conteudo-livre {
+  width: 60px;
+}
+
+.livre p {
+  font-size: 12px;
+}

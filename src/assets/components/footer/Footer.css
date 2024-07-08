@@ -1,0 +1,98 @@
+.footer-one {
+  width: 100%;
+  height: 90px;
+  background-color: #e60b11;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 390px;
+}
+.footer-two {
+  width: 100%;
+  height: 261px;
+  background-color: #ffffff;
+  display: flex;
+}
+.footer-three {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 75px;
+  background-color: #242424;
+  gap: 50px;
+}
+
+.ultimo-footer {
+  color: white;
+  font-size: 12px;
+}
+
+.text-01 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.text-02 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-two {
+  color: #484848;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+
+.sobre .loja .assistencia .pais .comunidade .privacidade,
+.list-footer {
+  padding-top: 40px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.footer-two .list-footer .titulos-footer {
+  color: #484848;
+}
+
+.footer-two li {
+  padding-bottom: 20px;
+  font-size: 16px;
+  color: #e60b11;
+  transition: transform 0.3s ease;
+}
+
+.footer-two li:hover {
+  color: #a40309; /* Apenas especifica a cor */
+}
+
+.logo-nintendo-footer {
+  width: 250px;
+}
+
+.redes-sociais .logo-instagram-footer,
+.logo-facebook-footer,
+.logo-x-footer {
+  width: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+.redes-sociais .logo-instagram-footer:hover,
+.logo-facebook-footer:hover,
+.logo-x-footer:hover {
+  transform: scale(1.4); /* Aumenta o tamanho do botão em 10% */
+}
+
+.redes-sociais {
+  display: flex;
+  gap: 50px;
+}
+
+a {
+  text-decoration: none;
+}
