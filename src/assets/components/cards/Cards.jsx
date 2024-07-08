@@ -13,6 +13,7 @@ import MarioKart from "../../../../public/mario-kart.jpg";
 import AdvanceWars from "../../../../public/advance-wars.jpg";
 // Imagens das Novidades
 import MarioRabbids from "../../../../public/novidades-card.jpg";
+import F99 from "../../../../public/F99.jpg";
 
 // Array de objetos dos jogos em destaque
 const emDestaque = [
@@ -100,16 +101,16 @@ const novidades = [
     titulo:
       "Experimente o teste de jogo mais recente, MARIO + RABBIDS SPARKS OF HOPE",
     descricao:
-      "Ajude Mario e Rabbid Peach a colocar ordem no cosmos! Do dia 8 de julho, às 10h até o dia 14 de julho, às 23h59 (horário do Pacífico), os usuários*",
+      "Ajude Mario e Rabbid Peach a colocar ordem no cosmos! Do dia 8 de julho, às 10h até o dia 14 de julho, às 23h59 (horário do Pacífico), os usuários*...",
   },
   {
     cod: 2,
-    imagem: MarioRabbids,
-    data: "07/07/24",
+    imagem: F99,
+    data: "03/07/24",
     titulo:
-      "Experimente o teste de jogo mais recente, MARIO + RABBIDS SPARKS OF HOPE",
+      "Exclusivo para assinantes do Nintendo Switch Online! Jogue o novo conteúdo do jogo F-ZERO 99 com a última atualização!",
     descricao:
-      "Ajude Mario e Rabbid Peach a colocar ordem no cosmos! Do dia 8 de julho, às 10h até o dia 14 de julho, às 23h59 (horário do Pacífico), os usuários*",
+    "Uma nova atualização sem custo adicional chegou acelerada ao jogo F-ZERO™ 99! Se você ainda não experimentou, F-ZERO 99 é um jogo de...",
   },
 ];
 
