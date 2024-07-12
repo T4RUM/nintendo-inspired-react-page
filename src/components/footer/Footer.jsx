@@ -1,8 +1,8 @@
 import "./Footer.css";
-import logoNintendo from "../../../../public/logoNintendo.png";
-import logoInstagram from "../../../../public/instagram.png";
-import logoFacebook from "../../../../public/facebook.png";
-import logoX from "../../../../public/twitter.png";
+import logoNintendo from "../../../public/logoNintendo.png";
+import logoInstagram from "../../../public/instagram.png";
+import logoFacebook from "../../../public/facebook.png";
+import logoX from "../../../public/twitter.png";
 
 
 function Footer() {

@@ -1,19 +1,20 @@
+import { Link } from "react-router-dom";
 import "./Cards.css";
 // Imagens dos jogos em destaque
-import PaperMario from "../../../../public/paper-mario.jpg";
-import MarioParty from "../../../../public/mario-party.jpg";
-import MetalSlug from "../../../../public/metal-slug.jpg";
-import Overcooked from "../../../../public/overcooked.jpg";
-import Zelda from "../../../../public/zelda.jpg";
+import PaperMario from "../../../public/paper-mario.jpg";
+import MarioParty from "../../../public/mario-party.jpg";
+import MetalSlug from "../../../public/metal-slug.jpg";
+import Overcooked from "../../../public/overcooked.jpg";
+import Zelda from "../../../public/zelda.jpg";
 // Imagens dos jogos Favoritos
-import TacticsOgre from "../../../../public/tactics-ogre.jpg";
-import SuperSmashBros from "../../../../public/super-smash-bros.jpg";
-import Kirby from "../../../../public/kirby.jpg";
-import MarioKart from "../../../../public/mario-kart.jpg";
-import AdvanceWars from "../../../../public/advance-wars.jpg";
+import TacticsOgre from "../../../public/tactics-ogre.jpg";
+import SuperSmashBros from "../../../public/super-smash-bros.jpg";
+import Kirby from "../../../public/kirby.jpg";
+import MarioKart from "../../../public/mario-kart.jpg";
+import AdvanceWars from "../../../public/advance-wars.jpg";
 // Imagens das Novidades
-import MarioRabbids from "../../../../public/novidades-card.jpg";
-import F99 from "../../../../public/F99.jpg";
+import MarioRabbids from "../../../public/novidades-card.jpg";
+import F99 from "../../../public/F99.jpg";
 
 // Array de objetos dos jogos em destaque
 const emDestaque = [
@@ -110,7 +111,7 @@ const novidades = [
     titulo:
       "Exclusivo para assinantes do Nintendo Switch Online! Jogue o novo conteúdo do jogo F-ZERO 99 com a última atualização!",
     descricao:
-    "Uma nova atualização sem custo adicional chegou acelerada ao jogo F-ZERO™ 99! Se você ainda não experimentou, F-ZERO 99 é um jogo de...",
+      "Uma nova atualização sem custo adicional chegou acelerada ao jogo F-ZERO™ 99! Se você ainda não experimentou, F-ZERO 99 é um jogo de...",
   },
 ];
 
@@ -118,14 +119,12 @@ const novidades = [
 function Cards() {
   // Mapeamento para os jogos em destaque
   const itensCards = emDestaque.map((card) => (
-
-      <div className="container-box" key={card.cod}>
-        <img className="img-card" src={card.imagem} alt="Banner Luigi" />
-        <h3 className="titulo-game">{card.titulo}</h3>
-        <div className="tag-disponivel">{card.tag}</div>
-        <span className="tag-console">{card.console}</span>
-      </div>
-
+    <div className="container-box" key={card.cod}>
+      <img className="img-card" src={card.imagem} alt="Banner Luigi" />
+      <h3 className="titulo-game">{card.titulo}</h3>
+      <div className="tag-disponivel">{card.tag}</div>
+      <span className="tag-console">{card.console}</span>
+    </div>
   ));
 
   // Mapeamento para os jogos favoritos

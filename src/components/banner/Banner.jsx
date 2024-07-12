@@ -1,7 +1,7 @@
 import "./Banner.css";
-import BannerLuigi from "../../../../public/banner.png";
-import Livre from "../../../../public/livre.png";
-import Background from "../../../../public/background.jpg";
+import BannerLuigi from "../../../public/banner.png";
+import Livre from "../../../public/livre.png";
+import Background from "../../../public/background.jpg";
 import { BsNintendoSwitch } from "react-icons/bs";
 import { MdGames } from "react-icons/md";
 import { BiSolidMessageAltDetail } from "react-icons/bi";

@@ -1,6 +1,6 @@
 import "./Gallery.css";
-import Pix from "../../../../public/pix.png";
-import backgroundFooter from "../../../../public/footer-background.png";
+import Pix from "../../../public/pix.png";
+
 import Cards from "../cards/Cards";
 
 function Gallery() {

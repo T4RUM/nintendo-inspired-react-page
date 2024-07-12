@@ -1,18 +1,19 @@
-import Navbar from "./assets/components/navbar/Navbar";
-import Banner from "./assets/components/banner/Banner";
-import Gallery from "./assets/components/gallery/Gallery";
-import Cards from "./assets/components/cards/Cards";
-import Footer from "./assets/components/footer/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import CustomNavbar from "./components/navbar/Navbar"; 
+import Footer from "./components/footer/Footer";
+import Login from "./pages/Login";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Banner />
-
-      <Gallery />
+    <BrowserRouter>
+      <CustomNavbar />
+      <Routes>
+        <Route path="/iniciar-sessao" element={<Login />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
       <Footer />
-    </>
+    </BrowserRouter>
   );
 }
 
