@@ -4,14 +4,16 @@ import Footer from "./components/footer/Footer";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
+import Register from "./pages/Register";
 
 function App() {
   return (
     <HashRouter>
       <CustomNavbar />
       <Routes>
-        <Route path="/iniciar-sessao" element={<Login />} />
         <Route path="/" element={<Home />} />
+        <Route path="/iniciar-sessao" element={<Login />} />
+        <Route path="/criar-conta" element={<Register/>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

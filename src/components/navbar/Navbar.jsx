@@ -21,10 +21,10 @@ function CustomNavbar() {
       <nav className="navbar-nav">
         <ul>
           <li>
-            <Link to="/assistencia">Assistência</Link>
+            <Link >Assistência</Link>
           </li>
           <li>
-            <Link to="/lista-de-desejos">Lista de desejos</Link>
+            <Link >Lista de desejos</Link>
           </li>
           <li>
             <Link to="/iniciar-sessao"> Iniciar sessão / Criar uma conta</Link>

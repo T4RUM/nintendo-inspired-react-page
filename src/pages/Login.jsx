@@ -1,9 +1,9 @@
+import LoginAccount from "../components/login/LoginAccount";
+
 function Login() {
   return (
     <>
-      <main>
-        <h1>Tela de Login</h1>
-      </main>
+      <LoginAccount />
     </>
   );
 }
