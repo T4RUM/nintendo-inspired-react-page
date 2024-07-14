@@ -1,0 +1,177 @@
+.containerFather {
+  display: flex;
+  justify-content: center;
+}
+
+.containerForm {
+  display: flex;
+  width: 700px;
+  text-align: center;
+  flex-direction: column;
+}
+
+.tituloCriarConta {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: #3c3c3c;
+  padding: 30px 0 80px 0;
+}
+
+.ssoCriarConta {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #3c3c3c;
+  font-weight: 400;
+}
+
+.botaoDeLoginGoogleCriarConta,
+.botaoDeLoginAppleCriarConta {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #b1b1b1;
+  border-radius: 25px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  justify-content: center;
+  position: relative;
+}
+
+.botaoDeLoginGoogleCriarConta {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.botaoDeLoginAppleCriarConta {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+
+.sso {
+  display: flex;
+  gap: 10px;
+  padding: 30px;
+}
+
+.googleIcon,
+.appleIcon {
+  position: absolute;
+  left: 10px;
+}
+
+.googleIcon {
+  color: red;
+}
+
+.appleIcon {
+  color: rgb(255, 255, 255);
+}
+
+.descricaoFormulario {
+  padding-top: 80px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #3c3c3c;
+}
+
+.labelInputWrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.containerLabel1 {
+  width: 300px;
+}
+
+.labelInputWrapperInner1 {
+  display: flex;
+  margin-bottom: 20px;
+  text-align: left;
+  column-gap: 64px;
+  width: 100%;
+}
+
+.labelFormularioCadastro1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #3c3c3c;
+  margin-right: 10px;
+  width: 120px;
+  height: 100%;
+  /* text-align: right; */
+  padding-left: 16px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.labelFormularioCadastro1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 5px;
+  background-color: #000000;
+}
+
+.caixaInput {
+  width: 100%;
+}
+
+.inputFormularioCadastro1 {
+  border: 1px solid #DFDFDF;
+  padding: 10px;
+  box-sizing: border-box;
+  flex: 1;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.descricaoInputCadastro1 {
+  display: block;
+  margin-top: 5px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: #6c6c6c;
+
+  max-width: 400px;
+}
+
+.birth {
+  width: 100%;
+}
+
+.groupSelect {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.botaoCadastro {
+  font-family: Helvetica - 400;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  background-color: red;
+  border-radius: 25px;
+  width: 150px;
+  padding: 10px;
+  cursor: pointer;
+}
+.containerbotaoCadastro {
+  border-top: 1px solid #dfdfdf;
+  padding: 20px;
+}
+.dadosFormulario {
+  padding-top: 50px;
+}
