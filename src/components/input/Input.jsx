@@ -27,6 +27,14 @@ function Input({
               </option>
             ))}
           </select>
+        ) : type === "textarea" ? (
+          <textarea
+            className="inputFormularioCadastro"
+            id={id}
+            maxLength={maxLength}
+            minLength={minLength}
+            placeholder={placeholder}
+          />
         ) : (
           <input
             className="inputFormularioCadastro"

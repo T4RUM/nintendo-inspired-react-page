@@ -7,7 +7,6 @@ function handleClick() {
   alert("Este site está em Desenvolvimento");
 }
 
-// Renomeie o componente para CustomNavbar para evitar conflito
 function CustomNavbar() {
   return (
     <header className="navbar">
@@ -21,7 +20,7 @@ function CustomNavbar() {
       <nav className="navbar-nav">
         <ul>
           <li>
-            <Link >Assistência</Link>
+            <Link to="/assistencia">Assistência</Link>
           </li>
           <li>
             <Link >Lista de desejos</Link>

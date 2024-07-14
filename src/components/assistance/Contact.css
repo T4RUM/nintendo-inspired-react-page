@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 140px 10px 150px;
+  border-bottom: 1px solid #dadada;
+}
+.BannerContact {
+  width: 500px;
+}
+
+.tittleContact {
+  font-size: 60px;
+  font-weight: 400;
+  color: #484848;
+  font-family: Lato - 400;
+  padding: 60px;
+}
+
+.containerForm {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+.botaoFeedBack {
+  font-family: Helvetica - 400;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  background-color: red;
+  border-radius: 25px;
+  width: 150px;
+  padding: 10px;
+  cursor: pointer;
+}
