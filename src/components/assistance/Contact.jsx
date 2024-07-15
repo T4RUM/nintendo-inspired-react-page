@@ -1,14 +1,17 @@
+// Contact.jsx
 
-import "./Contact.css";
-import BannerContact from "../../../public/bannerContact.png";
-import Input from "../input/Input";
 import React from "react";
 import { useForm, FormProvider } from "react-hook-form";
+import Input from "../input/Input";
+import "./Contact.css";
+import BannerContact from "../../../public/bannerContact.png";
 
 function Contact() {
   const methods = useForm();
-  function assistance(data) {
+
+  function handleFormSubmit(data) {
     console.log(data);
+    
   }
 
   return (
@@ -26,12 +29,12 @@ function Contact() {
 
       <div className="containerFormContact">
         <FormProvider {...methods}>
-          <form onSubmit={methods.handleSubmit(assistance)}>
+          <form onSubmit={methods.handleSubmit(handleFormSubmit)}>
             <Input
               label={"Apelido"}
               type={"text"}
               id={"apelido"}
-              maxLength={"10"}
+              maxLength={10}
               placeholder={"Máximo de 10 caracteres"}
               description={
                 "Obs.: Isto será usado para comunicações da Nintendo e não será mostrado a outros sem aviso prévio."
@@ -51,20 +54,18 @@ function Contact() {
 
             <Input
               label={"Feedback"}
-              type={"textarea"}
+              type={"textarea"} 
               id={"feedback"}
               maxLength={1000}
               placeholder={"Digite aqui o seu Feedback"}
               {...methods.register("feedback", { required: true })}
             />
 
-       <div className="containerButton">
+            <div className="containerButton">
               <button className="botaoFeedBack" type="submit">
                 Enviar Feedback
               </button>
-        
-       </div>
-       
+            </div>
           </form>
         </FormProvider>
       </div>

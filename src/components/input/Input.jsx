@@ -1,3 +1,5 @@
+// input/Input.jsx
+
 import React from "react";
 import { useFormContext } from "react-hook-form";
 import "./Input.css";
@@ -49,6 +51,18 @@ function Input({
               </option>
             ))}
           </select>
+        ) : type === "textarea" ? (
+          <textarea
+            className={`inputFormularioCadastro ${
+              hasError ? "invalidInput" : ""
+            }`}
+            id={id}
+            rows="4"
+            cols="50"
+            maxLength={maxLength}
+            placeholder={placeholder}
+            {...register(id, validationRules)}
+          />
         ) : (
           <input
             className={`inputFormularioCadastro ${
