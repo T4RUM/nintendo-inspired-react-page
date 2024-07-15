@@ -3,7 +3,7 @@ import logoNintendo from "../../../public/logoNintendo.png";
 import logoInstagram from "../../../public/instagram.png";
 import logoFacebook from "../../../public/facebook.png";
 import logoX from "../../../public/twitter.png";
-
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -71,7 +71,11 @@ function Footer() {
           <div className="privacidade">
             <ul className="list-footer">
               <li className="titulos-footer">Privacidade</li>
-              <li>Política de privacidade</li>
+              <li>
+                <Link  className="corLink" to="/politica-de-privacidade">
+                  Política de privacidade
+                </Link>
+              </li>
               <li>Cookies e anúncios com base em interesses</li>
             </ul>
           </div>

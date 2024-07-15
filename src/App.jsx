@@ -6,8 +6,7 @@ import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import Register from "./pages/Register";
 import Assistance from "./pages/Assistance";
-
-
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 function App() {
   return (
@@ -18,6 +17,7 @@ function App() {
         <Route path="/iniciar-sessao" element={<Login />} />
         <Route path="/criar-conta" element={<Register />} />
         <Route path="/assistencia" element={<Assistance />} />
+        <Route path="/politica-de-privacidade" element={<PrivacyPolicy />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

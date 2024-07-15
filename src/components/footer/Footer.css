@@ -60,15 +60,17 @@
   color: #484848;
 }
 
-.footer-two li {
+.footer-two li,
+.corLink {
   padding-bottom: 20px;
   font-size: 16px;
   color: #e60b11;
   transition: transform 0.3s ease;
 }
 
-.footer-two li:hover {
-  color: #a40309; /* Apenas especifica a cor */
+.footer-two li:hover,
+.corLink:hover {
+  color: #a40309; 
 }
 
 .logo-nintendo-footer {
@@ -80,12 +82,12 @@
 .logo-x-footer {
   width: 30px;
   cursor: pointer;
-  transition: transform 0.3s ease; /* Adiciona uma transição suave */
+  transition: transform 0.3s ease; 
 }
 .redes-sociais .logo-instagram-footer:hover,
 .logo-facebook-footer:hover,
 .logo-x-footer:hover {
-  transform: scale(1.4); /* Aumenta o tamanho do botão em 10% */
+  transform: scale(1.4); 
 }
 
 .redes-sociais {
