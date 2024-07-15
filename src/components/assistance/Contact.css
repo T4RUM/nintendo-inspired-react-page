@@ -17,11 +17,24 @@
   padding: 60px;
 }
 
-.containerForm {
+.containerForm1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.containerFormContact {
   width: 100%;
   display: flex;
   align-items: center;
   padding: 40px;
+  justify-content: center;
+}
+
+.containerButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .botaoFeedBack {
   font-family: Helvetica - 400;
