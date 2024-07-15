@@ -15,8 +15,6 @@ function CreateAccount() {
     console.log(data, "aqui");
   }
 
-
-
   const countries = [
     "Afeganistão",
     "África do Sul",
@@ -277,7 +275,13 @@ function CreateAccount() {
                       id={"senha"}
                       minLength={"8"}
                       placeholder={"Minimo de 8 caracteres"}
-                      {...methods.register("senha", { required: true })}
+                      {...methods.register("senha", {
+                        required: "A senha é obrigatória",
+                        minLength: {
+                          value: 6,
+                          message: "A senha deve ter acima de 6 caracteres",
+                        },
+                      })}
                     />
                     <Input
                       label={"Confirmar Senha"}
@@ -285,85 +289,8 @@ function CreateAccount() {
                       id={"confirmarSenha"}
                       minLength={"8"}
                       placeholder={"Minimo de 8 caracteres"}
-                      {...methods.register("confirmarSenha", {
-                        required: true,
-                      })}
+                      {...methods.register("confirmarSenha", {required: "A confirmação da senha é obrigatório", minLength:{value: 6, message: "A senha deve ter acima de 6 caracteres"} })}
                     />
-
-                    {/* <div className="labelInputWrapper1">
-                      <div className="labelInputWrapperInner1">
-                        <div className="containerLabel">
-                          <label
-                            className="labelFormularioCadastro1"
-                            htmlFor="dataNascimento"
-                          >
-                            Data de nascimento
-                          </label>
-                        </div>
-                        <div className="birth">
-                          <div className="groupSelect">
-                            <select
-                              id="year"
-                              className="inputFormularioCadastro1"
-                              value={birthYear}
-                              onChange={(e) => setBirthYear(e.target.value)}
-                              {...methods.register("year", { required: true })}
-                            >
-                              <option value="" disabled>
-                                Ano
-                              </option>
-                              {years.map((year) => (
-                                <option key={year} value={year}>
-                                  {year}
-                                </option>
-                              ))}
-                            </select>
-                            <select
-                              className="inputFormularioCadastro1"
-                              value={birthMonth}
-                              id="month"
-                              onChange={(e) => setBirthMonth(e.target.value)}
-                              // {...methods.register("month", {
-                              //   required: true,
-                              // })}
-                            >
-                              <option value="" disabled>
-                                Mês
-                              </option>
-                              {months.map((month) => (
-                                <option key={month} value={month}>
-                                  {month}
-                                </option>
-                              ))}
-                            </select>
-                            <select
-                              className="inputFormularioCadastro1"
-                              value={birthDay}
-                              id="day"
-                              onChange={(e) => setBirthDay(e.target.value)}
-                              // {...methods.register("day", {
-                              //   required: true,
-                              // })}
-                            >
-                              <option value="" disabled>
-                                Dia
-                              </option>
-                              {days.map((day) => (
-                                <option key={day} value={day}>
-                                  {day}
-                                </option>
-                              ))}
-                            </select>
-                          </div>
-
-                          <span className="descricaoInputCadastro1">
-                            *Não será possível mudar a sua data de nascimento
-                            mais tarde.
-                          </span>
-                        </div>
-                      </div>
-                    </div> */}
-
                     <Input
                       label="Sexo"
                       id="sexo"

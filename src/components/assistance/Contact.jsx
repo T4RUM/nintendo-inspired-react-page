@@ -1,4 +1,4 @@
-// Contact.jsx
+
 import "./Contact.css";
 import BannerContact from "../../../public/bannerContact.png";
 import Input from "../input/Input";
